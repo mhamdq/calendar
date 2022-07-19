@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+
+.auth{
+    margin: 30px 25% 20px 25%;
+}
+#error-login{
+  background-color: brown;
+  color: white;
+}
+.notVisible{
+  display: none;
+}
+.choose-month-years{
+    display: flex;
+    margin: 10px 25%;
+}
+.select-text-ym{
+    display: flex;
+    margin: 10px 25%;
+}
+.btnGoTo{
+    height: 25px;
+    vertical-align: middle;
+    margin: 4% 7px;
+}
+.btnGoTo a {
+  color: rgb(6,69,173);
+  text-decoration: none;
+}
+
+
+.calendar{
+    width: 60%;
+    border: 1 px solid black;
+    margin: 10px 25%;
+    height: 50vh;
+}
+.calendar td {
+    padding: 5px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    width: 14.29%;
+}
+.calendar-6weeks td{
+    height: 16,66%;
+}
+.calenday-weekDay{
+    font-weight: bold;
+    color: #000;
+    font-size: 1.5em;
+
+}
+.calendar-day{
+    font-size: 2em;
+}
+.calendar-othermonth{
+opacity: 0.3;
+}
+#currentDay{
+  border: 3px solid black;
+  background-color: wheat;
+}
+.calendar-events{
+  font-size: 0.6rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.containers {
+  margin-top: 8rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.row {
+  height: 400px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+  border: 1px solid black;
+}
+.col-4{
+  grid-column: 1/4;
+  border: 1px solid black
+}
+.col-8{
+  grid-column: 4/13;
+  border: 1px solid black
+
+}
+.weekendS{
+  background-color: rgb(97, 91, 92);
+}
+.weekendD{
+  background-color: rgb(189, 59, 76);
+}
+
+
+
+
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }  
